@@ -1,0 +1,18 @@
+// Condition variables to manage concurrent resources
+// - A condition must be used with a mutex
+// ---------------------------
+// routine 1
+// ---------------------------
+// lock mutex
+// as long as condition is false
+// 	wait on condvar
+// 	use resource/do work
+// unlock mutex
+
+// ---------------------------
+// routine 2
+// ---------------------------
+// lock mutex
+// make condition true
+// signal/broadcast condvar
+// unlock mutex

@@ -1,0 +1,10 @@
+{application,dynamic_supervisor,
+             [{modules,['Elixir.Counter','Elixir.Counter.Application',
+                        'Elixir.Counter.Worker',
+                        'Elixir.Counter.WorkerSupervisor']},
+              {optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger]},
+              {description,"dynamic_supervisor"},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.Counter.Application',[]}}]}.
